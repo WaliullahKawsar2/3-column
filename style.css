@@ -1,3 +1,5 @@
+
+
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&display=swap');
 :root{
@@ -12,92 +14,87 @@
   padding: 0;
   font-family: "Lexend Deca", sans-serif;
   box-sizing: border-box;
-  font-size: 15px;
 }
 
 body{
-  background-color: var(---backgroundheadingsbuttons);
-  margin: auto;
-  max-width: 560px;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.container{
-  margin: auto;
-  display: flex;
-  border-radius: 5px;
-  width: 100%;
-  overflow: hidden;
-
-}
-.common{
+  min-height: 100vh;
   padding: 30px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-}
-.common img{
-  width: 30px;
-}
-.common h1{
-  font-family: "Big Shoulders", sans-serif;
-  color: var(---backgroundheadingsbuttons);
-  margin: 20px 0 10px 0;
-  font-size: 30px;
-  text-transform: uppercase;
-  font-weight: 400;
+  justify-content: center;
 
 }
-.common p{
-  color: var(---paragraphs);
-  margin: 10px 0px 40px 0px;
-  font-size: 10px;
-  word-spacing: 1px;
-  line-height: 16px;
+.container{
+  display: flex;
+  margin: 0 auto;
+  max-width: 600px;
+  border-radius: .5rem;
+  overflow: hidden;
+
+}
+.container > div {
+  padding: 1.5rem ; 
+  display: flex;
+  flex-direction: column;
 }
 
 .sedans{
-  background-color: var(---Brightorange);
-}
-.sedans button{
+  background: var(---Brightorange);
   color: var(---Brightorange);
 }
-.suvs{  
-  background-color: var(---Darkcyan);  
-}
-.suvs button{
+.suvs{
+  background: var(---Darkcyan);
   color: var(---Darkcyan);
 }
 .luxury{
-  background-color: var(---Verydarkcyan);
-}
-.luxury button{
+  background: var(---Verydarkcyan);
   color: var(---Verydarkcyan);
 }
-button{
+
+div > img{
+  width: 30px;
+}
+div > h2{
+  font-family: 'Big Shoulders';
+  color: var(---backgroundheadingsbuttons);
+  font-weight: 500;
+  text-transform: uppercase;
+  margin: 1rem 0;
+
+}
+
+div > p{
+  color: var(---paragraphs);
+  font-size: 0.7rem;
+  line-height: 1rem;
+  margin-bottom: 50px;
+  opacity: 0.7;
+}
+
+.button{
+  align-self: flex-start;
+  justify-self: flex-end;
+  display: inline-block;
+  margin-top: auto;
+  padding: 0.6rem 1rem ;
+  border-radius: 20px;
   background-color: var(---backgroundheadingsbuttons);
-  border-radius: 30px;
-  padding: 5px;
+  font-size: .7rem;
   border: 2px solid var(---backgroundheadingsbuttons);
   cursor: pointer;
-  font-size: 10px;
-  width: 100px;
-  height: 30px;
-}
-button:hover{
-  background-color: transparent;
-  color: var(---backgroundheadingsbuttons);
-}
-
-@media screen and (max-width: 600px) {
-body{
-  height: auto;
-}
-.container{
-  margin: 20px;
-  flex-direction: column;
 
 }
+
+.button:hover{
+  background: transparent;
+  color: var(---paragraphs);
 }
+@media screen and (max-width: 550px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+
+
